@@ -1,7 +1,4 @@
 
-For more information on g_flot, see http://g_flot.rubyforge.org
-
-NOTE: Change this information in PostInstall.txt 
-You can also delete it if you don't want it.
+For more information on g_flot, see http://github.com/midas/g_flot/tree/master
 
 

@@ -1,32 +1,62 @@
 = g_flot
 
-* FIX (url)
+http://github.com/midas/g_flot/tree/master
+
 
 == DESCRIPTION:
 
-FIX (describe your package)
+A Guilded (http://github.com/midas/guilded/tree/master) Rails component that facilitates creating jQuery Flot graphs.
 
-== FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+== FEATURES:
 
-== SYNOPSIS:
+* Low level wrapper view helper that accepts the same options as the jQuery Flot plugin
 
-  FIX (code sample of usage)
-
-== REQUIREMENTS:
-
-* FIX (list of requirements)
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+  sudo gem install midas-g_flot
+
+In Rails environment.rb file:
+
+  config.gem 'midas-g_flot', :version => '1.0.0', :lib => 'g_flot', :source => 'http://gems.github.com'
+
+Run the assets generator:
+
+  script/generate flot_assets_generator
+
+
+== USAGE:
+
+Simple case (creates a bar graph with 2 bars):
+
+  <%= g_flot_graph :id => 'graph', :data => [ { :label => 'One Thing', :data => [[1,10] }, 
+        { :label => 'Second Thing', :data => [[2,17] } ] %>
+
+The view helper simply passes through all options to the initialization of the flot graph (the plot method).  The
+view helper uses to_json method to convert the options hash to valid JavaScript syntax.  So, for example, an options hash in Ruby:
+
+ options = { :id => 'graph', :data => [ { :label => 'One Thing', :data => [[1,10] }, { :label => 'Second Thing', :data => [[2,17] } ] }
+
+In JavaScript would become an object literal:
+
+ var options = { id: 'graph', data: [ { label: 'One Thing', data: [[1,10]] }, { label: 'Second Thing', data: [[2,17]] } ] }
+
+See http://code.google.com/p/flot/ for more infromation about flot and it's options / functionality.
+
+
+== REQUIREMENTS:
+
+* Rails >= 2.2.0
+* Guilded >= 0.2.1 (http://github.com/midas/guilded/tree/master)
+
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2009 FIXME full name
+Copyright (c) 2009 C. Jason Harrelson (midas), excluding jQuery plugins 
+copyrighted by others.
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
