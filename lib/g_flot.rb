@@ -4,7 +4,7 @@ $:.unshift(File.dirname(__FILE__)) unless
 require 'g_flot/view_helpers'
 
 module GFlot
-  VERSION = '1.0.0'
+  VERSION = '1.0.1'
 end
 
 if defined?( ActionView::Base )

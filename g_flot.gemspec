@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{g_flot}
-  s.version = "1.0.0"
+  s.version = "1.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["C. Jason Harrelson (midas)"]
@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = %q{A Guilded (http://github.com/midas/guilded/tree/master) Rails component that facilitates creating jQuery Flot graphs.}
   s.email = ["jason@lookforwardenterprises.com"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc"]
-  s.files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc", "Rakefile", "lib/g_flot.rb", "script/console", "script/destroy", "script/generate", "spec/g_flot_spec.rb", "spec/spec.opts", "spec/spec_helper.rb", "tasks/rspec.rake"]
+  s.files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc", "Rakefile", "g_flot.gemspec", "lib/g_flot.rb", "lib/g_flot/view_helpers.rb", "rails_generators/flot_assets/flot_assets_generator.rb", "rails_generators/flot_assets/template/guilded.flot_graph.js", "rails_generators/flot_assets/template/guilded.flot_graph.min.js", "rails_generators/flot_assets/template/jquery-flot-0.5.js", "rails_generators/flot_assets/template/jquery-flot-0.5.min.js", "script/console", "script/destroy", "script/generate", "spec/g_flot_spec.rb", "spec/spec.opts", "spec/spec_helper.rb", "tasks/rspec.rake"]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/midas/g_flot/tree/master}
   s.post_install_message = %q{PostInstall.txt}
