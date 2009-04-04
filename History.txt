@@ -1,4 +1,9 @@
-== 1.0.1 2009-04-03
+== 1.0.3 2009-04-03
+
+* Fixed generator bug
+
+
+== 1.0.2 2009-04-03
 
 * Just bumping for a build
 

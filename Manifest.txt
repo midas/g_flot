@@ -7,10 +7,10 @@ g_flot.gemspec
 lib/g_flot.rb
 lib/g_flot/view_helpers.rb
 rails_generators/flot_assets/flot_assets_generator.rb
-rails_generators/flot_assets/template/guilded.flot_graph.js
-rails_generators/flot_assets/template/guilded.flot_graph.min.js
-rails_generators/flot_assets/template/jquery-flot-0.5.js
-rails_generators/flot_assets/template/jquery-flot-0.5.min.js
+rails_generators/flot_assets/templates/guilded.flot_graph.js
+rails_generators/flot_assets/templates/guilded.flot_graph.min.js
+rails_generators/flot_assets/templates/jquery-flot-0.5.js
+rails_generators/flot_assets/templates/jquery-flot-0.5.min.js
 script/console
 script/destroy
 script/generate

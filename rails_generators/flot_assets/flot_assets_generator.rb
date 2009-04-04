@@ -1,4 +1,4 @@
-class AlreadyGridAssetsGenerator < Rails::Generator::Base
+class FlotAssetsGenerator < Rails::Generator::Base
   def initialize(runtime_args, runtime_options = {})
     super
   end
