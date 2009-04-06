@@ -10,6 +10,8 @@ class FlotAssetsGenerator < Rails::Generator::Base
       m.directory "public/javascripts/jquery"
       m.file "jquery-flot-0.5.js", "public/javascripts/jquery/jquery-flot-0.5.js"
       m.file "jquery-flot-0.5.min.js", "public/javascripts/jquery/jquery-flot-0.5.min.js"
+      m.file "excanvas.js", "public/javascripts/excanvas.js"
+      m.file "excanvas.min.js", "public/javascripts/excanvas.min.js"
     end
   end
 end

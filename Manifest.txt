@@ -7,6 +7,8 @@ g_flot.gemspec
 lib/g_flot.rb
 lib/g_flot/view_helpers.rb
 rails_generators/flot_assets/flot_assets_generator.rb
+rails_generators/flot_assets/templates/excanvas.js
+rails_generators/flot_assets/templates/excanvas.pack.js
 rails_generators/flot_assets/templates/guilded.flot_graph.js
 rails_generators/flot_assets/templates/guilded.flot_graph.min.js
 rails_generators/flot_assets/templates/jquery-flot-0.5.js
